@@ -10,8 +10,6 @@ for node, connections in input:
 def count_paths(node):
     if node == "out":
         return 1
-    if node not in graph or not graph[node]:
-        return 0
     
     total = 0
     for nxt in graph[node]:
